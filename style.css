@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+}
+
+.navbar {
+    background-color: rgba(255, 0, 0, 0) !important;
+}
+
+.img-sizing {
+    transform: scale(1.3);
+    position: relative;
+    top: 12vh;
+    left: 2.3vw;
+}
+
+.blur-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.blur-bg::before {
+    content: "";  /* Pseudo-elements require a content property */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(45px);
+}
+
+.landing-section {
+    background-image: url('./img/backdrop.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.landing-mobile-section {
+    height: 150vh;
+    background-image: url(/img/character-img-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top;
+    background-size: 95vw;
+
+}
+
+.btn-spooky {
+    background-color: #DC5F00;
+    color: white;
+    font-family: 'Boogaloo', sans-serif;
+    font-size: 2.1em;
+    border-radius: 13px;
+    padding: 0px 2vw;
+}
+
+.nav-btn-spooky {
+    font-size: 1.8em;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Bloody-terror';
+    src: url(/fonts/bloody-terror-font/BloodyTerror-GOW9Z.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bacon';
+    src: url('fonts/bacon-font/Bacon-gBJ3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bloody;
+    src: url(./fonts/bloody-scary-font/BloodyScaryRegular-K7q8y.ttf);
+}
+
+@font-face {
+    font-family: Bloody-Terror;
+    src: url(./fonts/bloody-terror-font/BloodyTerror-GOW9Z.ttf);
+}
+
+/* Fonts */
+
+.nav-style{
+    font-size: 40px;
+    color: #CF0A0A;
+    font-family: Bloody, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.cta-btn-text {
+    color: white;
+    font-family: 'Boogaloo', sans-serif;
+}
+
+.paragraph-text {
+    color: white;
+    font-weight: 300;
+    font-size: 1.7em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+.spooky-title {
+    font-size: 7vw;
+    color: #CF0A0A;
+    font-family: 'Bacon', "Trebuchet MS", Helvetica, sans-serif; 
+}
+
+.time {
+    font-family: 'Bacon';
+    font-size: 5.5em;
+    color: #DC5F00;
+    text-align: center;
+}
+
+.time-heading {
+    font-size: x-large;
+    font-family: 'Boogaloo', sans-serif;
+    color: white;
+    text-align: center;
+}
