@@ -2,6 +2,10 @@ body {
     background-color: black;
 }
 
+.btn:hover {
+    border: 2px solid #CF0A0A;
+}
+
 body, html {
     overflow-x: hidden;
 }
@@ -113,7 +117,14 @@ body, html {
 }
 
 .nav-btn-spooky {
-    font-size: 1.8vw;
+    font-size: 2em;
+}
+
+@media (max-width:992px) {
+    .nav-btn-spooky {
+        font-size: 1.7em;
+    }
+    
 }
 
 
@@ -156,6 +167,12 @@ body, html {
     font-size: 3vw;
     color: #CF0A0A;
     font-family: Bloody, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+@media (max-width:992px) {
+    .nav-style {
+        font-size:1.8em;
+    }
 }
 
 .cta-btn-text {
@@ -344,6 +361,16 @@ body, html {
 
 .spacing-btn-line {
     margin-top: 1em;
+}
+
+.btn-line {
+    background-color: black;
+}
+
+.btn-line:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    border: 2px solid white;
 }
 
 .footer {
