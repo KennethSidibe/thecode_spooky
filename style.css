@@ -2,9 +2,33 @@ body {
     background-color: black;
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: rgba(255, 0, 0, 0) !important;
 }
+
+.navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+.navbar-brand:active {
+    color: rgb(255, 255, 255);
+}
+.navbar-brand:focus {
+    color: #CF0A0A;
+}
+
+/* Custom Toggler Color */
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(207, 10, 10, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #f07070;
+} 
 
 .img-sizing {
     transform: scale(1.3);
@@ -13,66 +37,98 @@ body {
     left: 2.3vw;
 }
 
-.blur-bg {
-    position: relative;
-    overflow: hidden;
+@media (min-width:992px) {
+    .img-sizing {
+        transform: scale(1.4); 
+        position: relative;
+        left: 1vw;
+    }
+}
+@media (min-width:1200px) {
+    .img-sizing {
+        transform: scale(1.5); 
+        left: 2.3vw;
+    }
 }
 
-.blur-bg::before {
-    content: "";  /* Pseudo-elements require a content property */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    filter: blur(45px);
+@media (min-width:1400px) {
+    .img-sizing {
+        transform: scale(1.4);
+        left: 2.3vw; 
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .landing-section-large-screen {
+        display: none;
+    }
 }
 
 .landing-section {
     background-image: url('./img/backdrop.png');
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    
+    overflow: hidden;
 }
 
-.landing-mobile-section {
-    height: 150vh;
-    background-image: url(/img/character-img-mobile.png);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: top;
-    background-size: 95vw;
+.btn-spooky-mobile {
+    max-width: 50%;
+}
 
+.btn-spooky a {
+    color: white;
+    text-decoration: none;
 }
 
 .btn-spooky {
     background-color: #DC5F00;
     color: white;
     font-family: 'Boogaloo', sans-serif;
-    font-size: 2.1em;
+    font-size: 2.1vw;
     border-radius: 13px;
     padding: 0px 2vw;
 }
 
-.nav-btn-spooky {
-    font-size: 1.8em;
+@media (max-width:992px) {
+    .paragraph-text {
+        font-size: 1.7em;
+    }
+    .btn-spooky {
+        font-size: 2em;
+    }
+    .btn-spooky-larger {
+        font-size: 2.1em;
+    }
 }
+
+@media (min-width:1400px) {
+    .btn-spooky {
+        font-size: 3vw;
+    }
+    .btn-spooky-larger {
+        font-size: 5vw;
+    }
+}
+
+.nav-btn-spooky {
+    font-size: 1.8vw;
+}
+
 
 /* Fonts */
 
 @font-face {
     font-family: 'Bloody-terror';
-    src: url(/fonts/bloody-terror-font/BloodyTerror-GOW9Z.ttf) format(truetype);
+    src: url(./fonts/bloody-terror-font/BloodyTerror-GOW9Z.ttf) format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Bacon';
-    src: url('fonts/bacon-font/Bacon-gBJ3.ttf') format('truetype');
+    src: url('./fonts/bacon-font/Bacon-gBJ3.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -87,10 +143,17 @@ body {
     src: url(./fonts/bloody-terror-font/BloodyTerror-GOW9Z.ttf);
 }
 
+@font-face {
+    font-family: "secret-halloween";
+    src: url(./fonts/secret-halloween-font/SecretHalloween-eZ806.ttf) format("trueType");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Fonts */
 
 .nav-style{
-    font-size: 40px;
+    font-size: 3vw;
     color: #CF0A0A;
     font-family: Bloody, "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -103,11 +166,15 @@ body {
 .paragraph-text {
     color: white;
     font-weight: 300;
-    font-size: 1.7em;
+    font-size: 2vw;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-
+@media (max-width:992px) {
+    .paragraph-text {
+        font-size: 1.7em;
+    }
+}
 
 .spooky-title {
     font-size: 7vw;
@@ -117,9 +184,24 @@ body {
 
 .time {
     font-family: 'Bacon';
-    font-size: 5.5em;
+    font-size: 15vw;
     color: #DC5F00;
     text-align: center;
+}
+
+.time-heading-mobile {
+    font-size: 20vw;
+}
+
+
+@media(min-width: 993px) {
+    .time {
+        font-size: 7vw;
+    }
+}
+
+.time-mobile {
+    font-size: 7em;
 }
 
 .time-heading {
@@ -127,4 +209,151 @@ body {
     font-family: 'Boogaloo', sans-serif;
     color: white;
     text-align: center;
+}
+
+/* Music Section Style */
+@media (max-width:500px) {
+    .music-section {
+        background-position-x: 30%;
+    }
+}
+
+.music-section {
+    overflow-y: hidden;
+    background-image: url("./img/backdrop-music.png"); 
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-position-y: 50%;
+    background-position-y: center;
+}
+
+@media (min-width:992px) {
+    .img-music-large {
+        width: 50%;
+    }
+
+    .music-section {
+        background-position: center center;
+        background-size:cover;
+    }
+}
+
+.title-music {
+    font-size: 8vw;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+@media (max-width:992px) {
+    .title-music {
+        font-size: 2.3em;
+    }
+}
+
+.heading-music {
+    text-align: center;
+    font-size: 6vw;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    color: white; 
+}
+
+.title-accent-music {
+    font-family: "secret-halloween";
+    color: red;
+}
+
+.music-category {
+    font-family: "Boogaloo", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.music-list-container li {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 200;
+}
+
+@media (min-width:1400px) {
+    .music-list-container li {
+        font-size: 1.7vw;
+    }
+    .music-category {
+        font-size: 3vw;
+    }
+}
+
+.spacing-btn-spooky-music {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.line-section ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+
+.line-section li:before {
+    content: "-";
+    padding-right: 5px;
+}
+
+.img-line-mobile {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width: 760px) {
+    .img-line-container {
+        height: 70vh;
+    }
+}
+
+.line-title {
+    font-family: 'Bloody', sans-serif;
+    font-size: 8vw;
+    color: white;
+}
+
+@media (max-width:992px) {
+    .line-title {
+        font-size: 15vw;
+    }
+}
+
+.line-list li {
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+@media (max-width:992px) {
+    .line-list li {
+        font-size: 5vw;
+    }
+}
+
+.spacing-btn-line {
+    margin-top: 1em;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #CF0A0A; /* or any color you prefer */
+    
+}
+
+footer .font-text {
+    font-family: 'Kanit', sans-serif;
 }
