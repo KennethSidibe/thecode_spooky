@@ -237,7 +237,7 @@ body, html {
 
 .music-section {
     overflow-y: hidden;
-    background-image: url("./img/backdrop-music.png"); 
+    background-image: url("./img/webp-img/backdrop-music.webp"); 
     background-repeat: no-repeat;
     background-attachment:local;
     background-position-y: 50%;
@@ -383,4 +383,116 @@ body, html {
 
 footer .font-text {
     font-family: 'Kanit', sans-serif;
+}
+
+/* Why coming section */
+
+.why-coming-section {
+    color: white;
+}
+
+.why-coming-section .container-fluid {
+    margin-top: 3em;
+}
+
+.why-coming-section p {
+    font-size: 1.6em;
+}
+
+.why-coming-section span {
+    color: #CF0A0A;
+}
+
+.title-coming {
+    font-family: "Boogaloo", sans-serif;
+    font-size: 6em;
+}
+.title-coming-accent {
+    font-family: "Bloody-terror", sans-serif;
+    color: red;
+    font-size: smaller;
+}
+
+@media (max-width:992px) {
+    .title-coming {
+        font-size: 14vw;
+        margin-bottom: 5vh;
+    }
+    .why-coming-section p {
+        
+        font-size:large;
+    }
+    .why-coming-section p span {
+        color: red;
+    }
+}
+@media (min-width:700px) and (max-width:992px) {
+    .title-coming {
+        font-size: 11vw;
+    }
+    .title-coming br {
+        display: none;
+    }
+}
+
+/* Show off Section */
+
+.show-off-section {
+    /* min-height: 100vh; */
+    background-color: #CF0A0A;
+}
+
+.fill-width-title .col  {
+    font-weight: bold;
+    line-height: 0.8;
+    font-size: 15vw;
+    letter-spacing: -0.2vw;
+    word-spacing: -0.5vw;
+    color: white;
+    font-family: "Teko", sans-serif;
+}
+
+.fill-width-title .col:nth-child(1) {
+    margin-top: 0.2em;
+}
+
+.fill-width-title .col:nth-child(2) {
+    font-size: 17vw;
+}
+
+.fill-width-title .col:last-child {
+    color: #ff8020;
+}
+
+.title-show-off {
+    font-family: "Teko", sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.content-container {
+    color: white;
+    row-gap: 8em;
+    padding-bottom: 4em;
+}
+
+.content-container .col>* {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 80%;
+}
+
+.content-container .col a {
+    font-weight: 300;
+    color: white;
+}
+
+.content-container .date {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-size: small;
+}
+
+.content-container img {
+    filter: drop-shadow(0em 0 3rem rgba(0, 0, 0, 0.49));
 }
