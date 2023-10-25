@@ -55,7 +55,8 @@
             <div class="steps-container">
                 <h3>#1- Check your E-mail <i class="bi bi-envelope"></i> </h3>
 
-                <p>We sent you an e-mail confirming your registration to our giveaway.</p>
+                <p>We sent you an e-mail confirming your registration to our giveaway. If you did not receive the e-mail, let us know through our customer support
+                <a href="mailto:info@thecodeevent.com?subject=Need Help With giveaway registration" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope"></i></a> </p>
             </div>
 
             <div class="steps-container">

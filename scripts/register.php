@@ -5,8 +5,8 @@ function generateRandomNumber() {
     return str_pad($number, 3, '0', STR_PAD_LEFT);  // Pad the number with leading zeros to ensure it's 3 digits
 }
 
-$name = "Kenneth";
-$email = "sidibekenstevea@gmail.com";
+$name = $_POST['name'];
+$email = $_POST['email'];
 $uniqueId = generateRandomNumber();
 
 $name = ucfirst($name);
@@ -26,11 +26,10 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 $mail->Username = "thecodeeventca@gmail.com";
 $mail->Password = 'sswwrfhnczjacbsl';
-// $mail->Password = 'g?SLrj?$4ryYBjqa';
 
 
-$mail->setFrom("thecodeeventca@gmail.com", "TheCode Bot");
-$mail->addAddress("thecodeeventca@gmail.com", "TheCode Bot Registration");
+$mail->setFrom($mail->Username, "TheCode Bot");
+$mail->addAddress($mail->Username, "TheCode Bot Registration");
 
 $mail->Subject = "Registration Confirmation for " . $name .  ".";
 $mail->Body = "$name registered, here are his/her info : 
@@ -40,9 +39,19 @@ $mail->Body = "$name registered, here are his/her info :
     ";
 
 $mail->send();
-$mail->clearAddresses();
 
-$mail->setFrom("thecodeeventca@gmail.com", "TheCode Event");
+$mail->Body = "";
+$mail->Subject = "";
+$mail->clearAddresses();
+$mail->clearAddresses();
+$mail->clearAllRecipients();
+$mail->clearAttachments();
+$mail->clearBCCs();
+$mail->clearCCs();
+$mail->clearCustomHeaders();
+
+
+$mail->setFrom($mail->Username, "TheCode Event");
 $mail->addAddress($email, $name);
 
 $mail->Subject = "Thank you for registering " . $name . "!";
@@ -55,6 +64,16 @@ Don't forget to grab your ticket on our eventbrite event:
 We can't wait to se you on saturday 😊!";
 
 $mail->send();
+
+$mail->Body = "";
+$mail->Subject = "";
+$mail->clearAddresses();
+$mail->clearAddresses();
+$mail->clearAllRecipients();
+$mail->clearAttachments();
+$mail->clearBCCs();
+$mail->clearCCs();
+$mail->clearCustomHeaders();
 
 header("Location: ../thanks-script.php?name=" . urlencode($name));
 exit();

@@ -33,7 +33,7 @@
             <div class="row d-flex flex-lg-nowrap">
 
                 <div class="col-lg-8 col-sm-12 px-0 img-line-container">
-                    <img src="/img/webp-img/giveaway-girl-final.webp" loading="lazy" class="img-fluid img-line-mobile" alt="">
+                    <img src="./img/webp-img/giveaway-girl-final.webp" loading="lazy" class="img-fluid img-line-mobile" alt="">
                 </div>
 
                 <div class="col d-flex flex-column justify-content-around line-text-container " >
@@ -46,7 +46,7 @@
                         <li>Stress Relief</li>
                     </ul>
                     <div class="text-center fs-4 pb-4">
-                        <button class="btn btn-spooky btn-spooky-larger btn-line spacing-btn-line"><a href="./giveaway-register.html">Get Lucky</a></button>
+                        <button class="btn btn-spooky btn-spooky-larger btn-line spacing-btn-line"><a href="./giveaway-register.php">Get Lucky</a></button>
                     </div> 
                 </div>
 
