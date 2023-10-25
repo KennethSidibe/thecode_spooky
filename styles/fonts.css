@@ -1,0 +1,34 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Bloody-terror';
+    src: url(../fonts/bloody-terror-font/BloodyTerror-GOW9Z.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bacon';
+    src: url('../fonts/bacon-font/Bacon-gBJ3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Bloody;
+    src: url(../fonts/bloody-scary-font/BloodyScaryRegular-K7q8y.ttf);
+}
+
+@font-face {
+    font-family: Bloody-Terror;
+    src: url(../fonts/bloody-terror-font/BloodyTerror-GOW9Z.ttf);
+}
+
+@font-face {
+    font-family: "secret-halloween";
+    src: url(../fonts/secret-halloween-font/SecretHalloween-eZ806.ttf) format("trueType");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fonts */

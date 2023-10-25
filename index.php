@@ -39,7 +39,7 @@
                     <a class="navbar-brand col-lg-3 me-0 ms-3 nav-style" href="https://thecodeevent.com">TheCode_Event</a>
                     <ul class="navbar-nav col-lg-6 justify-content-lg-around">
                         <li class="nav-item">
-                        <a class="nav-link active nav-style" style="color: #CF0A0A;" aria-current="page" href="https://thecodeevent.com">Home</a>
+                        <a class="nav-link active nav-style" style="color: #CF0A0A;" aria-current="page" href="./giveaway-register.php">Giveaway</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link active nav-style" style="color: #CF0A0A;" aria-current="page" href="https://instagram.com/thecode_event">About</a>

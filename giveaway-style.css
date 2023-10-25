@@ -1,0 +1,18 @@
+
+.line-text-container {
+    background-color: white;
+}
+
+.line-title {
+    color: #CF0A0A;
+    font-family: "secret-halloween", sans-serif;
+    font-size: 7vw;
+}
+
+.line-list li {
+    color: black;
+}
+
+.img-line-mobile {
+    min-height: 100vh;
+}

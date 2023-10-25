@@ -1,1 +1,3 @@
 vid/
+scripts/vendor
+scripts/composer.lock
