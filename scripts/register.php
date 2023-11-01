@@ -25,7 +25,7 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 $mail->Username = "thecodeeventca@gmail.com";
-$mail->Password = 'sswwrfhnczjacbsl';
+$mail->Password = 'enter-password';
 
 
 $mail->setFrom($mail->Username, "TheCode Bot");
